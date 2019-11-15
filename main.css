@@ -80,12 +80,8 @@ body , ul , ol{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
     list-style: none;
-    margin-bottom: 20px;
-}
-.container .sub-content ul li{
-    align-self: flex-end;
+    margin-top: 30%;
 }
 .container .sub-content ul a{
     text-decoration: none;
@@ -133,4 +129,37 @@ tr:nth-child(odd){
 }
 tr:nth-child(even){
     background-color: #ccc;
+}
+
+.container .sub-content a{
+    display: inline-block;
+    text-decoration: none;
+    color: greenyellow;
+    padding: 10px;
+}
+.container .sub-content a:hover{
+    color: white;
+}
+.bg{
+    background-image: url(img.png);
+    
+}
+.bg p{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+#footer{
+    background-color: #222;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    display: none;
+}
+#footer:target{
+    display: block;
 }
