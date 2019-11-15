@@ -1,0 +1,121 @@
+body , ul , ol{
+    margin: 0;
+    padding: 0;
+}
+.top-nav{
+    position: fixed;
+    z-index: 2;
+    list-style: none;
+    background-color: #222;
+    width: 100%;
+}
+.top-nav li{
+    display: inline-block;
+}
+.top-nav a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+.top-nav a:hover{
+    color: teal;
+}
+.logo{
+    background-color: teal;
+    margin: 0;
+}
+.logo:hover{
+    background: orange;
+    color: teal;
+}
+.logout{
+    position: absolute;
+    right: 0;
+}
+
+.side-nav{
+    position: fixed;
+    padding-top: 60px;
+    top: 0;
+    list-style: none;
+    height: calc(100vh - 20px);
+    background-color: #222;
+    width: 160px;
+}
+
+.side-nav li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+
+.side-nav li a:hover{
+    color: orange;
+}
+.side-nav li .material-icons{
+    padding: 0 10px 0 0;
+    vertical-align: middle;
+}
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 180px;
+    padding: 10px;
+    width: calc(100% - 200px);
+    padding-top: 60px;
+}
+.container .sub-content{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 280px;
+    height: 180px;
+    background-color: orchid;
+    margin: 30px;
+    border-radius: 10px;
+}
+.container .sub-content ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.container .sub-content ul li{
+    align-self: flex-end;
+}
+.container .sub-content ul a{
+    text-decoration: none;
+    color: white;
+    background-color: yellowgreen;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.container .sub-content ul a:hover{
+    background-color: orange;
+}
+.container .sub-content h2{
+    display: flex;
+    align-items: flex-start;
+    background-color: orange;
+    padding: 15px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    justify-content: center;
+}
+.sub-content table{
+    border-collapse: collapse;
+
+}
+
+table, tr, td, th{
+    border: 2px solid orange;
+}
