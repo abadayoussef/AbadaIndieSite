@@ -69,10 +69,7 @@ body , ul , ol{
     padding-top: 60px;
 }
 .container .sub-content{
-    display: flex;
-    align-content: space-between;
-    justify-content: space-between;
-    flex-direction: column;
+    overflow: auto;
     width: 280px;
     height: 180px;
     background-color: orchid;
@@ -111,10 +108,29 @@ body , ul , ol{
     color: white;
     justify-content: center;
 }
-.sub-content table{
-    border-collapse: collapse;
+.container .sub-content img{
+    padding: 10px;
+    display: block;
+    width: 60%;
+    margin: auto;
 }
 
-table, tr, td, th{
-    border: 2px solid orange;
+table {
+    border-collapse: collapse;
+    width: 100%;
+}  
+table, tr {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+th, td {
+    padding: 5px;
+    text-align: left;
+  }
+tr:nth-child(odd){
+    background-color: #ddd;
+}
+tr:nth-child(even){
+    background-color: #ccc;
 }
