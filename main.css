@@ -163,3 +163,6 @@ tr:nth-child(even){
 #footer:target{
     display: block;
 }
+.sub-content:hover{
+    box-shadow: 0 0 8px #222;
+}
