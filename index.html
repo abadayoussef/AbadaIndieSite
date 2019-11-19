@@ -1,81 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Abada Example</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Godot Engine</title>
 </head>
-<body>
-    <ul class="top-nav">
-        <li class="logo"><a href="">Admin Panel</a></li>
-        <li><a href="#">About Me</a></li>  
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-        <li class="logout"><a href="#">Logout</a></li>
-    </ul>
 
-    <ul class="side-nav">
-        <li><a href=""><i class="material-icons">dashboard</i>Control Panel</a></li>
-        <li><a href=""><i class="material-icons">supervisor_account</i>Admins</a></li>
-        <li><a href=""><i class="material-icons">subject</i>Postes</a></li>
-        <li><a href=""><i class="material-icons">question_answer</i>Comments</a></li>
-        <li><a href=""><i class="material-icons">email</i>Messages</a></li>
-        <li><a href="#footer"><i class="material-icons">build</i>Show Footer</a></li>
-    </ul>
-    <div class="container">
-        <div class="sub-content">
-            <h2>Post</h2>
-            <ul>
-                <li><a href="#">New Post</a></li>
-                <li><a href="#">Show Recent Posts</a></li>
-            </ul>
+<body>
+    <div class="header" id="main">
+        <video class="video" poster="thumnail.png" muted autoplay loop>
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+        <div class="side-nav">
+            <a href="#main">Godot Engine</a>
+            <a href="#arc1">Features</a>
+            <a href="#arc2">Community</a>
+            <a href="#arc3">Showcases</a>
         </div>
-        <div class="sub-content">
-                <h2>Just a table</h2>
+        <div class="nav-top">
+            <a href="https://godotengine.org/">Godot website</a>
+            <a href="https://godotengine.org/download/windows">Download</a>
+            <a href="https://docs.godotengine.org/">Documentation</a>
+            <a href="https://godotengine.org/news">News</a>
+        </div>
+        <div class="row">
+            <div class="logo">
+                <img src="godot-logo.png" alt="Godot Engine Logo" width="100%">
+                <ul>
+                    <li>2D/3D Free And Open-Source Game Engine</li>
+                    <li>Runs on Window, Mac and Linux</li>
+                    <li>Export your game to Disktop and mobile (Android & IOS) and to Web browser</li>
+                </ul>
+            </div>
+            <div class="slider">
+                <img class="slide-img" src="Godot.jpg" width="100%" alt="picture 1">
+                <div class="slider-text">
+                    <h3 class="slider-title">Let know more about Godot Engine</h3>
+                    <p class="slider-discription">2D/3D Free And Open Source Game Engine</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="article1" id="arc1">
+            <h2>Godot Engine Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="opensource.png" alt="opensource logo" width="100%">
+                    <div class="feature-text">
+                        <h3>100% FREE TO USE</h3>
+                        <p>Godot is completely free and open-source under the very permissive MIT license.
+                            No strings attached, no royalties, nothing.
+                            Your game is yours, down to the last line of engine code.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="interface.png" alt="godot interface" width="100%">
+                    <div class="feature-text">
+                        <h3>EASY TO USE</h3>
+                        <p>Godot provides a huge set of common tools,
+                            so you can just focus on making your game without reinventing the wheel.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="editor.png" alt="godot interface" width="100%">
+                    <div class="feature-text">
+                        <h3>SCRIPT WITH FULL FREEDOM</h3>
+                        <p>More choices than any other engine.
+                            (GDScript, Full C# 7.0 support, Full C++ support,
+                            Visual scripting, Built-in editor, Integrated documentation.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="animate.jpg" alt="godot interface" width="100%">
+                    <div class="feature-text">
+                        <h3>ANIMATE EVERYTHING</h3>
+                        <p>Animate literally everything, from bones and objects to function calls.
+                            <br> custom transition curves and tweens to create incredible animations.
+                        </p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="godot3d2.jpg" alt="godot interface" width="100%">
+                    <div class="feature-text">
+                        <h3>GORGEOUS 3D GRAPHICS</h3>
+                        <p>The brand new physically-based renderer comes with a
+                            ton of features that will make your games look incredible.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="2dgames.jpg" alt="godot interface" width="100%">
+                    <div class="feature-text">
+                        <h3>INNOVATIVE DESIGN</h3>
+                        <p>Godot comes with hundreds of built-in nodes that make
+                            game design a breeze. You can also create your own for
+                            custom behaviors, editors and much more.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="article2" id="arc2">
+            <h2>Community</h2>
+            <p>Godot has a very active community across multiple channels.</p>
             <table>
                 <tr>
-                    <th>ID</th>
-                    <th>NAME</th>
-                    <th>EMAIL</th>
+                    <td><a href="https://discord.gg/zH7NUgz" target="_blank">DISCORD</a></td>
+                    <td>For the cool kids born after the IRC golden age who don't 5P34K 1337.</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>Youssef Abada</td>
-                    <td>youssef.me@gmail.com</td>
+                    <td><a href="https://www.facebook.com/groups/godotengine/" target="_blank">FACEBOOK</a></td>
+                    <td>Large community, great place to meet other Godot users.</td>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>Someone doe</td>
-                    <td>Example@gmail.com</td>
+                    <td><a href="https://twitter.com/godotengine" target="_blank">TWITTER</a></td>
+                    <td>Get small bits of development news.</td>
                 </tr>
                 <tr>
-                    <td>3</td>
-                    <td>Mr. robot</td>
-                    <td>youdontcare@yes.com</td>
+                    <td><a href="https://www.reddit.com/r/godot" target="_blank">REDDIT</a></td>
+                    <td>For the anti-imperialist resistance to Facebook.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://godotforums.org/" target="_blank">FORUM</a></td>
+                    <td>Community forum for all Godot developers.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://godotengine.org/qa" target="_blank">QUESTIONS & ANSWERS</a></td>
+                    <td>Place to ask questions and search for answers from the community.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://steamcommunity.com/app/404790" target="_blank">STEAM COMMUNITY</a></td>
+                    <td>Discuss and share tips with other developers on Steam.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com/c/GodotEngineOfficial" target="_blank">YOUTUBE</a></td>
+                    <td>Channel for official Godot videos.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/godotengine/" target="_blank">GITHUB</a></td>
+                    <td>Send potential bugs and feature requests here.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://godotengine.org/showcase" target="_blank">SHOWCASE</a></td>
+                    <td>Games made with Godot.</td>
                 </tr>
             </table>
         </div>
-        <div class="sub-content">
-            <h2>Just an Image</h2>
-            <img src="img.png" alt="Image demo">
+        <div class="article3" id="arc3">
+            <h2>Showcases</h2>
+            <p>this video will give you an idea of what you can do with Godot Engine</p>
+            <iframe width="70%" height="76%" src="https://www.youtube.com/embed/NlKEO1N8wMM" frameborder="0" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="sub-content">
-            <h2>Just Links</h2>
-            <a href="https://google.com/">Google</a>
-            <a href="https://youtube.com/">Youtube</a>
-            <a href="https://Gmail.com/">Gmail</a>
-            <a href="https://Github.com/">Github</a>
-        </div>
-        <div class="sub-content bg">
-            <h2>Just a background</h2>
-            <p>just a text</p>
-        </div>
-        <div id="footer">
-            <p>Youssef Abada &copy; 2019</p>
-        </div>
-</div>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
 </body>
+
 </html>

@@ -1,168 +1,229 @@
-body , ul , ol{
-    margin: 0;
-    padding: 0;
+*{
+    box-sizing: border-box;
 }
-.top-nav{
-    position: fixed;
-    z-index: 2;
-    list-style: none;
-    background-color: #222;
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    height: 100vh;
+}
+.nav-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
+    height: 40px;
 }
-.top-nav li{
-    display: inline-block;
-}
-.top-nav a{
-    display: inline-block;
-    padding: 20px;
-    text-decoration: none;
+.nav-top a {
     color: white;
+    text-decoration: none;
 }
-.top-nav a:hover{
-    color: teal;
+.video{
+    position: fixed;
+    z-index: -1;
 }
-.logo{
-    background-color: teal;
-    margin: 0;
+
+@media (min-aspect-ratio: 16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
 }
-.logo:hover{
-    background: orange;
-    color: teal;
-}
-.logout{
-    position: absolute;
-    right: 0;
+@media (max-aspect-ratio: 16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
 }
 
 .side-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     position: fixed;
-    padding-top: 60px;
-    top: 0;
-    list-style: none;
-    height: calc(100vh - 20px);
-    background-color: #222;
-    width: 160px;
+    z-index: 2;
+    height: 100vh;
 }
 
-.side-nav li a{
-    display: inline-block;
+.side-nav a{
     text-decoration: none;
     padding: 15px;
     color: white;
+    border-radius: 0 10px 10px 0;
+    width: 100px;
+    transform: translateX(-90px);
+    transition: transform 1s;
+    text-align: center;
 }
-
-.side-nav li a:hover{
-    color: orange;
+.side-nav a:nth-child(1){
+    background-color: rgba(247, 0, 255, 0.6);
 }
-.side-nav li .material-icons{
-    padding: 0 10px 0 0;
-    vertical-align: middle;
+.side-nav a:nth-child(2){
+    background-color: rgba(255, 102, 0, 0.6);
 }
-.container{
-    box-sizing: border-box;
+.side-nav a:nth-child(3){
+    background-color: rgba(212, 0, 255, 0.6);
+}
+.side-nav a:nth-child(4){
+    background-color: rgba(0, 183, 255, 0.6);
+}
+.side-nav a:hover{
+    transform: translateX(0px);
+}
+.row{
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    left: 180px;
-    padding: 10px;
-    width: calc(100% - 200px);
-    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.4vw;
+
 }
-.container .sub-content{
-    overflow: auto;
-    width: 280px;
-    height: 180px;
-    background-color: orchid;
-    margin: 30px;
+.logo{
+    margin: 50px;
+    padding: 20px;
+    flex: 30%;
+    max-width: 30%;
+    color: #222;
     border-radius: 10px;
+    background-color: white;
 }
-.container .sub-content ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    margin-top: 30%;
+.slider{
+    margin: 50px;
+    flex: 50%;
+    max-width: 50%;
+    position: relative;
 }
-.container .sub-content ul a{
-    text-decoration: none;
-    color: white;
-    background-color: yellowgreen;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-}
-.container .sub-content ul a:hover{
-    background-color: orange;
-}
-.container .sub-content h2{
-    display: flex;
-    align-items: flex-start;
-    background-color: orange;
+.slider-text{
     padding: 15px;
-    margin: 0;
-    border-radius: 10px 10px 0 0;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
 }
-.container .sub-content img{
-    padding: 10px;
-    display: block;
-    width: 60%;
-    margin: auto;
+
+@media (max-width: 1000px){
+    .row{
+        flex-wrap: nowrap;
+    }
+    .slider{
+        flex: 65%;
+        max-width: 65%;
+        margin: 10px;
+    }
+    .logo{
+        margin: 10px;
+        flex: 40%;
+        max-width: 40%;
+    }
+    table{
+        font-size: 0.7em;
+    }
+    td{
+        padding: 0;
+    }
+}
+
+@media (max-width: 700px){
+    .row{
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 1.8vw;
+        align-items: flex-start;
+    }
+    .slider{
+        flex: 80%;
+        max-width: 80%;
+        margin: 0;
+    }
+    .logo{
+        flex: 50%;
+        max-width: 50%;
+        margin: 0;
+    }
+    .features {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.6em;
+    }
+    .features .feature{
+        flex: 90%;
+        max-width: 90%;
+    }
+}
+#arc1, #arc2, #arc3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.article1{
+    background-image: url('bg4.jpg');
+}
+.article2{
+    background-image: url('bg2.jpg');
+}
+.article3{
+    background-image: url('bg1.jpg');
+}
+
+.features{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.features .feature{
+    flex: 30%;
+    max-width: 30%;
+    margin: 5px;
+    border-radius: 10px;
+    position: relative;
+    align-self: center;
+}
+.features .feature .feature-text{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px;
+    color: white;
+    font-size: 0.8em;
+    bottom: 0;
 }
 
 table {
     border-collapse: collapse;
-    width: 100%;
+    width: 70%;
+    color: #ddd;
+    opacity: 0.7;
 }  
 table, tr {  
     border: 1px solid #ddd;
     text-align: left;
   }
 
-th, td {
-    padding: 5px;
+td {
+    padding: 10px;
     text-align: left;
   }
+td a{
+    text-decoration: none;
+    color: dodgerblue;
+}
 tr:nth-child(odd){
-    background-color: #ddd;
+    background-color: #222
 }
 tr:nth-child(even){
-    background-color: #ccc;
-}
-
-.container .sub-content a{
-    display: inline-block;
-    text-decoration: none;
-    color: greenyellow;
-    padding: 10px;
-}
-.container .sub-content a:hover{
-    color: white;
-}
-.bg{
-    background-image: url(img.png);
-    
-}
-.bg p{
-    text-align: center;
-    font-size: 2em;
-    color: white;
-}
-
-#footer{
-    background-color: #222;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    left: 0;
-    display: none;
-}
-#footer:target{
-    display: block;
-}
-.sub-content:hover{
-    box-shadow: 0 0 8px #222;
+    background-color: #444; 
 }
