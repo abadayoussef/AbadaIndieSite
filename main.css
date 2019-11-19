@@ -109,9 +109,6 @@ body{
 }
 
 @media (max-width: 1000px){
-    .row{
-        flex-wrap: nowrap;
-    }
     .slider{
         flex: 65%;
         max-width: 65%;
@@ -119,8 +116,8 @@ body{
     }
     .logo{
         margin: 10px;
-        flex: 40%;
-        max-width: 40%;
+        flex: 35%;
+        max-width: 35%;
     }
     table{
         font-size: 0.7em;
